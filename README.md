@@ -27,7 +27,7 @@ In `flash.cfg`, replace:
 
 `source [find interface/ftdi/digilent_jtag_hs3.cfg]`
 
-with your own board's cfg file.
+With your own board's cfg file.
 
 You can find the name of your programmer cfg here: https://github.com/arduino/OpenOCD/tree/master/tcl/interface/ftdi
 
