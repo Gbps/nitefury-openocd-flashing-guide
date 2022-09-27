@@ -20,6 +20,15 @@ The Nitefury II comes with a JTAG breakout board which you connect to your FPGA 
 
 I highly recommend the [Digilent JTAG-HS3 Programming Cable](https://digilent.com/shop/jtag-hs3-programming-cable/) as this is tested with this setup.
 
+## Using a Different JTAG Programmer
+If you do not have the JTAG-HS3, you can modify `flash.cfg` to point to a different programmer's CFG file.
+
+In `flash.cfg`, replace:
+`source [find interface/ftdi/digilent_jtag_hs3.cfg]`
+with your own board's cfg file.
+
+You can find the name of your programmer cfg here: https://github.com/arduino/OpenOCD/tree/master/tcl/interface/ftdi
+
 # Notes About Flashing (JTAG vs. PCIe)
 
 These boards have two main methods for flashing a bitstream to the device. The first method is flashing over JTAG, which requires hooking up a JTAG setup as seen above. In this guide we will use OpenOCD to communicate with the SPI flash chip over JTAG. While this isn't the fastest mechanism, it is capable of flashing the default project in 2 minutes 30 seconds on my machine, which is much faster than the typical Vivado flash.
@@ -27,8 +36,6 @@ These boards have two main methods for flashing a bitstream to the device. The f
 **You can also flash the device over PCIe only when a compatible bitstream is active.** A compatible bitstream is one which is specifically built to use its PCIe IP block to expose the internal SPI flash as a PCIe resource to the OS. This allows a usermode flasher application to map the on-board SPI and flash a new bitstream. The Nitefury II project comes with a [spi-loader](https://github.com/RHSResearchLLC/NiteFury-and-LiteFury/tree/master/spi-loader) project which allows flashing from a Linux machine over PCIe.
 
 If all of your designs include the PCIe block diagram as seen in the [spi-loader](https://github.com/RHSResearchLLC/NiteFury-and-LiteFury/tree/master/spi-loader) project, then you can continue to flash new designs over PCIe for the remainder of your development time. If you flash a new bitstream that does not include this functionality, or the functionality stops working, your only fallback is JTAG. It is a good idea to always have JTAG on hand for flashing just in case.
-
-#
 
 # What is Included in this Repo
 
