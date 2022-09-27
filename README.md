@@ -24,7 +24,9 @@ I highly recommend the [Digilent JTAG-HS3 Programming Cable](https://digilent.co
 If you do not have the Digilent JTAG-HS3 Programmer, you can modify `flash.cfg` to point to a different programmer's CFG file.
 
 In `flash.cfg`, replace:
+
 `source [find interface/ftdi/digilent_jtag_hs3.cfg]`
+
 with your own board's cfg file.
 
 You can find the name of your programmer cfg here: https://github.com/arduino/OpenOCD/tree/master/tcl/interface/ftdi
