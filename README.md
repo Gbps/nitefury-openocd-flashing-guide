@@ -10,7 +10,7 @@ I found it difficult to flash my Nitefury II, so I created this repo as a result
 
 - [**Acorn CLE 215**](https://www.amazon.com/SQRL-CLE-215-Acorn) - Untested, but uses relatively the same design as the Nitefury II so it should function the same.
 - [**PicoEVB**](https://www.crowdsupply.com/rhs-research/picoevb) - Look [here](https://github.com/RHSResearchLLC/PicoEVB/tree/master/spi-flash-program-openocd) instead.
-- [**Litefury**](https://rhsresearch.com/products/litefury) - Not the same chip used here. Could be modified to use this chip.
+- [**Litefury**](https://rhsresearch.com/products/litefury) - Not the same FPGA chip used here. However, this could be modified to use this chip by using a proxy bitstream made for this chip. See below.
 
 # Programming Cable
 
