@@ -33,7 +33,7 @@ You can find the name of your programmer cfg here: https://github.com/arduino/Op
 
 # Notes About Flashing (JTAG vs. PCIe)
 
-These boards have two main methods for flashing a bitstream to the device. The first method is flashing over JTAG, which requires hooking up a JTAG setup as seen above. In this guide we will use OpenOCD to communicate with the SPI flash chip over JTAG. While this isn't the fastest mechanism, it is capable of flashing the default project in 2 minutes 30 seconds on my machine, which is much faster than the typical Vivado flash.
+These boards have two main methods for flashing a bitstream to the device. The first method is flashing over JTAG, which requires hooking up a JTAG setup as seen above. In this guide we will use OpenOCD to communicate with the SPI flash chip over JTAG. While this isn't the fastest mechanism, it is capable of flashing the default project in less than 2 minutes on my machine, which is much faster than the typical Vivado flash.
 
 **You can also flash the device over PCIe only when a compatible bitstream is active.** A compatible bitstream is one which is specifically built to use its PCIe IP block to expose the internal SPI flash as a PCIe resource to the OS. This allows a usermode flasher application to map the on-board SPI and flash a new bitstream. The Nitefury II project comes with a [spi-loader](https://github.com/RHSResearchLLC/NiteFury-and-LiteFury/tree/master/spi-loader) project which allows flashing from a Linux machine over PCIe.
 
