@@ -16,7 +16,7 @@ I found it difficult to flash my Nitefury II, so I created this repo as a result
 
 This process uses the [Digilent JTAG-HS3 Programming Cable](https://digilent.com/shop/jtag-hs3-programming-cable/) which uses a [FT232H](https://www.ftdichip.com/old2020/Products/ICs/FT232H.htm) USB->Serial chip. This repo uses OpenOCD and is specifically set up to use this cable and JTAG chip, but there will be a section where you can modify the settings to your own JTAG programmer's settings. 
 
-The Nitefury II comes with a JTAG breakout board which you connect to your FPGA board using the IO included connector. Plug the IO connector into the side of the JTAG breakout board labelled BLK, then connect your JTAG programmer. Your JTAG programmer must be able to connect to a **2x7 Xilinx JTAG Connector.** Do not attempt to use any 2x7 ribbon cables from Amazon, as their connector pitch width will not fit into the slot. It is important to use a cable and programmer specifically intended for Xilinx JTAG.
+The Nitefury II comes with a JTAG breakout board which you connect to your FPGA board using the included IO connector. Plug the IO connector into the side of the JTAG breakout board labelled BLK, then connect your JTAG programmer. Your JTAG programmer must be able to connect to a **2x7 Xilinx JTAG Connector.** Do not attempt to use any 2x7 ribbon cables from Amazon, as their connector pitch width will not fit into the slot. It is important to use a cable and programmer specifically intended for Xilinx JTAG.
 
 I highly recommend the [Digilent JTAG-HS3 Programming Cable](https://digilent.com/shop/jtag-hs3-programming-cable/) as this is tested with this setup.
 
