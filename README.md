@@ -62,7 +62,7 @@ This was tested on Ubuntu 22.04 Server running in a VMWare Workstation 16 VM wit
 
    - Note: that `0403:6014` is the device vendor ID of your FTDI USB->Serial chip. If this is not `0403:6014`, these instructions will **not** work out of the box for you. See the section **Programming Cable** above.
 
-4. If you want to flash a specific bitstream and do not care to flash the PCIe programmer bitstream, make a copy of `flash-project0.sh` and edit the target bitstream file to your `.bit` or `.bin`. Run that script instead.
+4. If you want to flash a specific bitstream and do not care to flash the PCIe programmer bitstream, make a copy of `flash.cfg` and `flash-project0.sh` and edit the target bitstream file in `flash.cfg` to point to your new `.bit` or `.bin`. Then, edit your new `flash-project0.sh` script to use that new `.cfg` file instead. Run that script instead.
 
 5. Run `chmod +x ./flash-project0.sh`
 
