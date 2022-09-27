@@ -118,7 +118,7 @@ If all goes well, the new bitstream is flashed! Congratulations!
 
 ## == Using Windows ==
 
-- Not yet tested, so no instructions here. However, it should be fairly easy to run a similar workflow using the same openocd configuration file and the Windows version of openocd. Feel free to put in a PR with instructions if you've got them!
+- Not yet tested, so no instructions here. However, it should be fairly easy to run a similar workflow using the same openocd configuration file and the Windows version of openocd. You can also use a VMWare VM with USB Passthrough, as the above instructions are tested there. Feel free to put in a PR with instructions with running native Windows if you've got them!
 
 # How to Flash with PCIe
 
