@@ -8,7 +8,7 @@ I found it difficult to flash my Nitefury II, so I created this repo as a result
 
 - **[Nitefury II](https://rhsresearch.com/collections/rhs-public/products/nitefury-xilinx-artix-fpga-kit-in-nvme-ssd-form-factor-2280-key-m)** - Tested and working. This is the one I have.
 
-- [**Acorn CLE 215**](https://www.amazon.com/SQRL-CLE-215-Acorn) - Unknown, but uses relatively the same design as the Nitefury II so it should function the same.
+- [**Acorn CLE 215**](https://www.amazon.com/SQRL-CLE-215-Acorn) - Untested, but uses relatively the same design as the Nitefury II so it should function the same.
 - [**PicoEVB**](https://www.crowdsupply.com/rhs-research/picoevb) - Look [here](https://github.com/RHSResearchLLC/PicoEVB/tree/master/spi-flash-program-openocd) instead.
 - [**Litefury**](https://rhsresearch.com/products/litefury) - Not the same chip used here. Could be modified to use this chip.
 
