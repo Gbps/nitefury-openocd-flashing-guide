@@ -112,7 +112,7 @@ This was tested on Ubuntu 22.04 Server running in a VMWare Workstation 16 VM wit
      Tue Sep 27 03:50:21 AM UTC 2022
      ```
 
-   - This will take approximately **3 minutes.** It might not display anything for long periods of time.
+   - This will take approximately **1 minutes 30 seconds.** It might not display anything for long periods of time.
 
 If all goes well, the new bitstream is flashed! Congratulations! 
 
