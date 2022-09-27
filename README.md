@@ -21,7 +21,7 @@ The Nitefury II comes with a JTAG breakout board which you connect to your FPGA 
 I highly recommend the [Digilent JTAG-HS3 Programming Cable](https://digilent.com/shop/jtag-hs3-programming-cable/) as this is tested with this setup.
 
 ## Using a Different JTAG Programmer
-If you do not have the JTAG-HS3, you can modify `flash.cfg` to point to a different programmer's CFG file.
+If you do not have the Digilent JTAG-HS3 Programmer, you can modify `flash.cfg` to point to a different programmer's CFG file.
 
 In `flash.cfg`, replace:
 `source [find interface/ftdi/digilent_jtag_hs3.cfg]`
