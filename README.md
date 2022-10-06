@@ -1,6 +1,6 @@
-# Nitefury II / Acorn CLE OpenOCD Flashing Guide
+# Nitefury II / Acorn CLE+ OpenOCD Flashing Guide
 
-This guide and repo will help you flash bitstreams to your **[Nitefury II](https://rhsresearch.com/collections/rhs-public/products/nitefury-xilinx-artix-fpga-kit-in-nvme-ssd-form-factor-2280-key-m)** or [**Acorn CLE 215**](https://www.amazon.com/SQRL-CLE-215-Acorn) board using [OpenOCD](https://github.com/openocd-org/openocd) over a JTAG programmer and PCIe.
+This guide and repo will help you flash bitstreams to your **[Nitefury II](https://rhsresearch.com/collections/rhs-public/products/nitefury-xilinx-artix-fpga-kit-in-nvme-ssd-form-factor-2280-key-m)** or **Acorn CLE 215+** board using [OpenOCD](https://github.com/openocd-org/openocd) over a JTAG programmer and PCIe.
 
 I found it difficult to flash my Nitefury II, so I created this repo as a result of my research into it!
 
